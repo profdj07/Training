@@ -11,4 +11,6 @@ jobs:
      - name: Run a one-line script
        run: echo Hello, DevOps Eng SA
      - name: Uploading to deploy
-       run: rsync -zhrv . ec2-user@13.126.191.145:/home/ec2-user/
+       run: | 
+        rsync -zhrv . ec2-user@13.126.191.145:/home/ec2-user/
+        echo "Working" 
